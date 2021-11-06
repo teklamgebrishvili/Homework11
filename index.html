@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework11</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    
+    <meta name="description" content="Web code">
+    <meta name="keywords" content="index.html, style.css, responsive.css">
+    <meta name="author" content="Teko">
+    <meta http-equiv="refresh" content="120">
+
+    <link rel="icon" type="image/png" href="data:image/jpeg;base64,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" />
+    <script src="https://kit.fontawesome.com/edf7f0fa23.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--section-1-start-->
+    <header class="header-container">
+        <div class="header-title">
+              <h2>Contact</h2>
+              <p>Contact Us To get</p>
+              <p>Free Support</p>
+        </div>
+        <!--auth section start-->
+        <section class="section-1-wrapper">
+        <div class="container">
+            <form class="form" action="" method="post">
+                <div class="left-block">
+                    <textarea name="decription" id="decription" placeholder="Description"></textarea>
+                </div>
+                <div class="right-block">
+                    <input type="text" placeholder="Subject" name="subject" id="subject" required>
+                    <input type="text" placeholder="Name/Surname" name="name-surname" id="name-surname" required>
+                    <input type="email" placeholder="email" name="email" id="email" required>
+                    <input type="submit" value="Send">
+                </div>
+            </form>
+        </div>
+    </section>
+    <!--auth section end-->
+    <div class="box-wrapper">
+       <div class="box">
+           <div class="border">
+             <i class="far fa-envelope"></i>
+           </div>
+             <h3>Email</h3>
+             <h4>Example@yahoo.com</h4>
+             <h4>Example44@yahoo.com</h4>
+       </div>
+       <div class="box">
+          <div class="border">
+             <i class="fas fa-phone-alt"></i>
+          </div>
+             <h3>Phone</h3>
+             <h4>454652312</h4>
+             <h4>712135648</h4>
+       </div>
+       <div class="box">
+           <div class="border">
+              <i class="fas fa-location-arrow"></i>
+           </div>
+              <h3>Location</h3>
+              <h4>Chigaco Ilinois</h4>
+              <h4>New York Street</h4>
+       </div>
+    </div>
+    <!--Section-1-end-->
+    <!--section-2-start-->
+    <section class="section-2-wrapper">
+        <div class="section-2-title">
+            <h2>Photos</h2>
+            <p>See Our Latest Photos</p>
+            <p>from restaurant and hotel</p>
+        </div> 
+        <div class="section-2-images">
+            <img src="img/first.jpg" alt="first">
+            <img src="img/second.jpg" alt="second">
+            <img src="img/third.jpg" alt="third">
+        </div>
+    </section>
+    <!--section-2-end-->
+    <!--footer start-->
+    <footer>
+        <div class="container footer-container">
+            <div class="description">
+                <h5>Zetta Hotels</h5>
+                  <h6>
+                    Our hotel is an image of quality 
+                    Our hotel is an image of quality Our hotel is an image of quality
+                    Our hotel is an image of quality
+                  <h6>
+                <div class="icon-wrapper">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                </div>
+            </div>
+            <div class="links">
+                <h5>Useful Links</h5>
+                <ul>
+                    <li>Blog</li>
+                    <li>Rooms</li>
+                    <li>Gift Cards</li>
+                    <li>Testimonials</li>
+                </ul>
+            </div>
+            <div class="privacy">
+                <h5>Privacy</h5>
+                <ul>
+                    <li>Career</li>
+                    <li>About Us</li>
+                    <li>Contact Us</li>
+                    <li>Services</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h5>Contact Info</h5>
+                <ul>
+                    <li class="mail">Example@yahoo.com</li>
+                    <li class="phone">+320 555 448</li>
+                    <li class="map">Main St Chicago Ilinois</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--footer end-->
+</body>
+</html>
